@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4efe6;
+    color: #2b2118;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.icon {
+    font-size: 55px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 38px;
+}
+
+header p {
+    color: #6d5c4b;
+}
+
+.chat-box {
+    height: 480px;
+    overflow-y: auto;
+    background: #fffaf2;
+    border: 1px solid #d8c8b4;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.message {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.message.user {
+    flex-direction: row-reverse;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background: #e7d6bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    max-width: 75%;
+    padding: 13px 17px;
+    border-radius: 15px;
+    background: #eadbc7;
+}
+
+.text p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.user .text {
+    background: #d8b47a;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #cbbba7;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-area button {
+    padding: 0 25px;
+    border: none;
+    border-radius: 12px;
+    background: #7a4f28;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background: #5f3c1e;
+}
+
+.examples {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.examples p {
+    color: #6d5c4b;
+}
+
+.examples button {
+    border: 1px solid #cbbba7;
+    background: #fffaf2;
+    padding: 9px 13px;
+    margin: 4px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.examples button:hover {
+    background: #eadbc7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #806e5b;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .chat-box {
+        height: 55vh;
+        padding: 15px;
+    }
+
+    .text {
+        max-width: 82%;
+    }
+
+    .input-area button {
+        padding: 0 18px;
+    }
+}
