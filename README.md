@@ -50,7 +50,7 @@ most relevant answer from a predefined FAQ dataset.
 ```text
 CodeAlpha_FAQ_Chatbot/
 │
-├── chatbot.py
+├── app.py
 ├── faq_data.py
 ├── requirements.txt
 ├── .gitignore
